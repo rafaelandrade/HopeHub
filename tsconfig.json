@@ -1,6 +1,12 @@
 {
-  "files": ["src/*.ts", "src/model/*.ts"],
   "compilerOptions": {
-    "target": "es5"
-  }
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "target": "ES2019",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strictNullChecks": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
